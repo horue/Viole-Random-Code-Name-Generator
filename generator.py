@@ -7,6 +7,7 @@ lower_letters = string.ascii_lowercase
 
 ul_code_l = []
 lu_code_l = []
+un_code_l = []
 
 
 
@@ -26,10 +27,10 @@ def gencode(name):
         ## UN code is a unique code made by 10 random ascii letters. ##
         for j in range(10):
             un_code = random.choice(general_letters)
-            print(un_code)
-
+            un_code_l.append(un_code)
         
         lu_code_l.append(lu_code)
         ul_code_l.append(ul_code)
+    un = ''.join(un_code_l)
     print(f'{lu_code_l[i]}_{ul_code_l[i]}')
-    print(f"{lu_code}_{name}_{ul_code}_{un_code}")
+    print(f"{lu_code}_{name}_{ul_code}_{un}")
