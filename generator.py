@@ -33,5 +33,5 @@ def gencode(name, x):
         lu_code_l.append(lu_code)
         ul_code_l.append(ul_code)
     un = ''.join(un_code_l)
-    print(f'{lu_code_l[i]}_{ul_code_l[i]}')
-    print(f"{lu_code}_{name}_{ul_code}_{un}")
+    #(f'{lu_code_l[i]}_{ul_code_l[i]}')
+    return(f"{lu_code}_{name}_{ul_code}_{un}")
