@@ -1,3 +1,3 @@
 from generator import *
-
-gencode(name='testing', x=255)
+test=gencode(name='testing', x=255)
+print(test)
