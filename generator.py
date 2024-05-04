@@ -10,7 +10,7 @@ lu_code_l = []
 un_code_l = []
 
 
-def gencode(name, x):
+def gencode(name, x=3):
     if x > 10:
         x=10
     for i in range(2):
