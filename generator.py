@@ -24,8 +24,9 @@ def gencode(name):
         ul_code = random.choice(upper_letters) + random.choice(lower_letters)
 
         ## UN code is a unique code made by 10 random ascii letters. ##
-
-        un_code = 10*((random.choice(lower_letters)))
+        for j in range(10):
+            un_code = random.choice(general_letters)
+            print(un_code)
 
         
         lu_code_l.append(lu_code)
