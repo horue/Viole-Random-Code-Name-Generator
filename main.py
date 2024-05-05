@@ -1,3 +1,7 @@
 from generator import *
-test=gencode(name='testing', x=255)
-print(test)
+
+
+
+for i in range(10):
+    test=gencode()
+    print(test)
