@@ -6,7 +6,7 @@ upper_letters = string.ascii_uppercase
 lower_letters = string.ascii_lowercase
 
 
-class viole:
+class viole_rcng:
     def gencode(name='ReNN_Viole_rCNg', x=3):
         ul_code_l = []
         lu_code_l = []
