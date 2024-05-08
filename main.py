@@ -2,6 +2,26 @@ from generator import viole_rcng as viole
 
 
 
-for i in range(10):
-    test=viole.gencode(name='test', x=1)
+print('-------------------------TESTS------------------------------')
+
+for i in range(5):
+    test=viole.gencode(name=viole.gencode())
+    print(test)
+
+print(60*'-')
+
+for i in range(5):
+    test=viole.gencode()
+    print(test)
+
+print(60*'-')
+
+for i in range(5):
+    test=viole.gencode(x=3)
+    print(test)
+
+print(60*'-')
+
+for i in range(5):
+    test=viole.gencode(name='Testin-Name')
     print(test)
