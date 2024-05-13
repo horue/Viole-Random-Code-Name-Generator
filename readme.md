@@ -1,27 +1,43 @@
 
-# Viole Random Code Name Generator
-The "Viole Random Code Name Generator" is a simple project aimed at generating random code names. This can be useful for various purposes such as naming projects, servers, or any other entities requiring unique identifiers.
+# Viole - Random Code Name Generator
 
-1. Features:
+Viole is a Python library that generates random code names using a combination of letters and numbers. It provides flexibility in generating code names with different patterns and components.
 
-	-   Generates random code names.
-	-   Allows customization of the generated names.
+## 1. Installation
 
-2. How to Use
+You can install Viole via pip: `pip install VioleRCNG` 
 
-	- Clone the repository to your local machine.
-	 `git clone https://github.com/horue/Viole-Random-Code-Name-Generator.git`
-	 - Open the project in your preferred code editor.
-	- Run the `main.py` script.
-	- Follow the prompts to generate random code names.
+## 2. Usage
+`import viole_rcng`
 
-3. Requirements
+# 3. Generate a code name with default settings
 
-	-   Python 3
+    code_name = viole_rcng.gencode()
+    print(code_name)
 
-4. License
+# 4. Generate a code name with custom settings
 
-	This project is licensed under the MIT License - see the LICENSE file for details.
-5.  Acknowledgments
+    code_name = viole_rcng.gencode(name='Custom_Name', factor=5, lu=True, ul=True, separator='-')
+    print(code_name)` 
 
-	This project was inspired by the need for simple and unique identifiers in various contexts.
+## 5. Parameters
+
+| Parameter  | Description                                          | Default Value |
+|------------|------------------------------------------------------|---------------|
+| `name`     | The base name to be included in the code name       | 'ReNN_Viole_rCNg' |
+| `factor`   | The factor determining the length of the unique code part (the unique code is always the factor*4)| 3 |
+| `lu`       | Include the LU (Lowercase-Uppercase) code part      | `True` |
+| `ul`       | Include the UL (Uppercase-Lowercase) code part      | `True` |
+| `separator`| The separator character between code name components| '_' |
+
+## 6. Examples
+
+Check out the [GitHub repository](https://github.com/horue/Viole-Random-Code-Name-Generator) for usage examples and more information.
+
+## 7. License
+
+Viole is licensed under the MIT License. You are free to use and modify this software for any purpose.
+
+## 8. About
+
+This project is maintained by [horue](https://github.com/horue). Contributions are welcome! If you encounter any issues or have suggestions for improvements, feel free to open an issue or submit a pull request on the GitHub repository.
