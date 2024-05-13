@@ -7,10 +7,11 @@ lower_letters = string.ascii_lowercase
 
 
 class Viole:
-    def gencode(name='ReNN_Viole_rCNg', factor=3, lu=True, ul=True):
+    def gencode(name='ReNN_Viole_rCNg', factor=3, lu=True, ul=True, separator='_'):
         ul_code_l = []
         lu_code_l = []
         un_code_l = []
+        sep = separator
 
         if factor > 10:
             factor=10
@@ -36,10 +37,10 @@ class Viole:
             ul_code_l.append(ul_code)
         un = ''.join(un_code_l)
         if lu:
-            return(f"{lu_code}_{name}_{ul_code}_{un}")
+            return(f"{lu_code}{sep}{name}{sep}{ul_code}{sep}{un}")
         if ul:
-            return(f"{name}_{ul_code}_{un}")
+            return(f"{name}{sep}{ul_code}{sep}{un}")
         if lu and ul:
-            return(f"{lu_code}_{name}_{ul_code}_{un}")
+            return(f"{lu_code}{sep}{name}{sep}{ul_code}{sep}{un}")
         else:
-            return(f"{name}_{un}")
+            return(f"{name}{sep}{un}")
