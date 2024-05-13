@@ -10,12 +10,12 @@ You can install Viole via pip: `pip install VioleRCNG`
 ## 2. Usage
 `import viole_rcng`
 
-# 3. Generate a code name with default settings
+## 3. Generate a code name with default settings
 
     code_name = viole_rcng.gencode()
     print(code_name)
 
-# 4. Generate a code name with custom settings
+## 4. Generate a code name with custom settings
 
     code_name = viole_rcng.gencode(name='Custom_Name', factor=5, lu=True, ul=True, separator='-')
     print(code_name)` 
