@@ -37,7 +37,7 @@ class Viole:
             ul_code_l.append(ul_code)
         un = ''.join(un_code_l)
         if lu:
-            return(f"{lu_code}{sep}{name}{sep}{ul_code}{sep}{un}")
+            return(f"{lu_code}{sep}{name}{sep}{un}")
         if ul:
             return(f"{name}{sep}{ul_code}{sep}{un}")
         if lu and ul:
