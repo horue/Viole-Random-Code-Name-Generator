@@ -1,1 +1,1 @@
-from viole_rcng import gencode
+from .viole_rcng import *
